@@ -1,58 +1,82 @@
 import streamlit as st
 
-st.title(" My new app🔥" , anchor=False)
-st.header("Ich bin eine neue Überschrift👻" , anchor=False)
-st.subheader("Noch eine kleiner Überschrift😼" , anchor=False)
-st.write("das ist meine streamlit app")
+left, right = st.columns(2)
 
-st.markdown("<p>Ich bin ein Text </p>" , unsafe_allow_html=True)
+left.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkGGYkd6sRsHNOMvn3NpC1LQf1sjFjuGZLXw&s")
 
-st.header("IT-Kompetenz", anchor=False, divider="blue")
+right.header("Stanislaw Berndl")
+
+st.header("IT-Kompetenz", anchor=False, divider="violet")
 
 st.write("""
-            - 🌐Webentwicklung: Fundierte Grundkenntnisse in HTML, CSS und Streamlit (Fullstack-Framework)
-            - 🤖Programmierung: Praktische Erfahrung in Python, Entwicklung kleiner Anwendungen und Skripte
-            - 🏢Office-Suite: Versierter Umgang mit Microsoft Word, Excel und PowerPoint
-            - 🚧Eigene Projekte: Konzeption und Umsetzung verschiedener Projekte inklusive Hosting
-            - 🏫Schulprojekte: Erstellung datenbasierter Präsentationen und interaktiver Tabellenkalkulationen
+        - 🔝Office: Guter Umgang mit Word, Powerpoint und Excel
+        - 💯Programmieren: Basics auswendig gelernt
+        - 🏫Schule: Fach Bereich IT mit positivem Erfolg
+        - 🤖Programmier Sprachen: HTML, CSS und Python
+         
             """, unsafe_allow_html=True)
 
-st.header("Schulbildung", anchor=False, divider="blue")
+st.header("Schulbildung", anchor=False, divider="violet")
 
 st.subheader("Fachmittelschule Schaumburgergasse, Wien")
 
 st.write("""
-        - 🎒Schwerpunkt: Intensive IT-Spezialisierung, Fokus auf modernen Webtechnologien und Wirtschaft
-        - 🎒Zeitraum: September 2024 - Juli 2025
-        - 🎒Derzeitiger Notenschnitt: 1,5
+        - 🐍Schwerpunkt: Intensive IT-Spezialisierung, Fokus auf modernen Webtechnologien und Wirtschaft
+        - ⏱️Zeitraum: September 2024 - Juli 2025
          """, unsafe_allow_html=True)
 
-st.subheader("Mittelschule Kayniongasse, Wien")
+st.subheader("MSI Wiesberggasse, Wien")
 
 st.write("""
-        - ⏱️Zeitraum: September 2020 – Juli 2024
-        - ⏱️Abschluss-Notendurchschnitt: 1,7
+        - ⏱️Zeitraum: Februar 2024 – Juli 2024
          """, unsafe_allow_html=True)
 
-st.header("Arbeitserfahrung" , anchor=False, divider="blue")
+st.subheader("Gymnasium Rosasgasse, Wien")
 
 st.write("""
-        - 🈺Berufspraktische Tage 1: Bei XYZ von 18. bis 22. Nov. 2024
-        - 🈺Berufspraktische Tage 2: Bei XYZ von 24. bis 28. Feb. 2025
+        - ⏱️Zeitraum: september 2020 – jänner 2024
          """, unsafe_allow_html=True)
 
-st.header("Zusätzliche Qualifikationen" , anchor=False , divider="blue")
+
+st.header("Arbeitserfahrung" , anchor=False, divider="violet")
 
 st.write("""
-        - ⏩Schnelle Auffassungsgabe für neue Softwareanwendungen und Technologien
-        - ⏫Großes Interesse an der kontinuierlichen Weiterentwicklung im IT-Bereich
-        - 🥇Teamfähigkeit und Kommunikationsstärke bei gemeinsamen Coding-Projekten
+        - 🈺Berufspraktische Tage 1: Himmelblau Architektur 1120
+        - 🈺Berufspraktische Tage 2: H&M Auhof
          """, unsafe_allow_html=True)
 
-st.header("Interessen und Hobbys" , anchor=False , divider="blue")
+st.header("Skills", anchor=False, divider="violet")
+
+st.subheader("Soft Skills")
 
 st.write("""
-        - ⚽Fußball: Mitglied in einem Fußball-Klub
-        - 📖Lesen: Begeisterte Leserin verschiedenster Literatur
-        - ♟️Schach: Engagiert im Schachklub
+        - 🛡️Leicht verständlich
+        - 🤼Teamarbeit
+        - ⌛Pünktlich
+        - 🙂Freundlich
+        - ❗Konzetriert
+         """)
+
+st.subheader("Sprachkenntnise")
+
+st.write("""
+                           - Russisch in Wort und Schrift
+                           - Ukrainisch in Wort und Schrift
+                           - Polnisch in Wort
+                           - Deutsch in Wort und Schrift
+                           - English in Wort und Schrift
+                        
+         """)
+
+
+
+
+
+st.header("Interessen und Hobbys" , anchor=False , divider="violet")
+
+st.write("""
+        - 🎮video spiele spielen: einer der Hauptsachen die ich in meiner Freizeit tuhe
+        - 📖Lesen: tuhe ich in der Freizeit
+        - 🚶raus gehen: Zum sozial bleiben
+        - 🍳Kochkünste
          """, unsafe_allow_html=True)
