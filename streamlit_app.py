@@ -1,10 +1,36 @@
 import streamlit as st
+from pathlib import Path
+
+st.markdown("<style> .stAppHeader {display:none;} ul {list-style-type: none; } </style>", unsafe_allow_html=True)
+
+def get_file_content_as_bytes(file_path):
+    with open(file_path, "rb") as file:
+        return file.read()
+
+# Pfad zur PDF-Datei
+file_path = 'Lebenslaufstani.pdf'
+
+# Lese den Inhalt der PDF-Datei als Bytes
+file_bytes = get_file_content_as_bytes(file_path)
 
 left, right = st.columns(2)
 
-left.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkGGYkd6sRsHNOMvn3NpC1LQf1sjFjuGZLXw&s")
+left.image("images.jpg" , width=250)
 
-right.header("Stanislaw Berndl")
+with right:
+        st.markdown("""
+                <h3>Stanislaw Berndl</h3>
+            <em>Ich finde KI ganz cool weil es immer für einen da ist.
+                und es mir auch oft hilft :)</em>
+               """, unsafe_allow_html=True)
+
+        st.download_button(
+                label="📄 Download Lebenslauf",
+                data=file_bytes,
+                file_name=file_path,
+                mime='application/pdf'
+    )
+        st.write("📩", "stanislaw05042005@gmail.com")
 
 st.header("IT-Kompetenz", anchor=False, divider="violet")
 
@@ -75,7 +101,7 @@ st.write("""
 st.header("Interessen und Hobbys" , anchor=False , divider="violet")
 
 st.write("""
-        - 🎮video spiele spielen: einer der Hauptsachen die ich in meiner Freizeit tuhe
+        - 🎮video spiele spielen: einer der Haupt Sachen die ich in meiner Freizeit tuhe
         - 📖Lesen: tuhe ich in der Freizeit
         - 🚶raus gehen: Zum sozial bleiben
         - 🍳Kochkünste
