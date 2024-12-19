@@ -106,3 +106,4 @@ st.write("""
         - 🚶raus gehen: Zum sozial bleiben
         - 🍳Kochkünste
          """, unsafe_allow_html=True)
+
